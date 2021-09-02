@@ -13,3 +13,11 @@
  *= require_tree .
  *= require_self
  */
+ .banner {
+    background-size: cover;
+    background-position: center;
+    padding: 150px 0;
+    background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url(https://st4.depositphotos.com/10282098/23475/i/1600/depositphotos_234757064-stock-photo-set-of-project-icons-flat.jpg);
+    text-align: center;
+    font-size: 50;
+}

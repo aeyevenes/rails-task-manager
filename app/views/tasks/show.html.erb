@@ -1,21 +1,22 @@
 <br>
 <br>
 <br>
+<div class =banner>
 <%= link_to edit_task_path(@task.id), class: 'pull-right btn btn-default' do %>
-  <i class="fa fa-pencil"></i> Edit this task
+  <i class="fa fa-pencil"></i> <h1>Edit this task</h1>
 <% end %>
-
+<class =banner>
 <h1><%= @task.tittle %></h1>
-
+<div class =banner p>
 <p class="well"><%= @task.details %></p>
 
 <% if @task.completed %>
-  <i class="fa fa-check-square-o"></i> This task is completed
+  <i class="fa fa-check-square-o"></i> <h1>This task is completed</h1>
 <% else %>
-  <i class="fa fa-square-o"></i> This task is not completed yet
+  <i class="fa fa-square-o"></i> <h1>This task is not completed yet</h1>
 <% end %>
 
 <hr>
 <%= link_to tasks_path do %>
-  <i class="fa fa-history"></i> Back to list
+  <i class="fa fa-history"></i> <h1>Back to list</h1>
 <% end %>

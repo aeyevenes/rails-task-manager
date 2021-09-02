@@ -1,11 +1,12 @@
 <br>
 <br>
 <br>
-<h1>My tasks</h1>
-
-<ul id="tasks">
-  <% @tasks.each do |task| %>
+<div class="banner">
+    <h1>Our Tasks</h1>
+     <ul id="tasks">
+     <% @tasks.each do |task| %>
     <li>
+    <p>
       <% if task.completed %>
         <i class="fa fa-check-square-o"></i>
       <% else %>
@@ -16,12 +17,13 @@
       <%= link_to task_path(task.id), method: :delete, data: { confirm: "Delete #{task.tittle}?" } do %>
         <i class="fa fa-trash-o" aria-hidden="true"></i>
       <% end %>
+      </p>
     </li>
   <% end %>
 </ul>
 
 <hr>
-
+<div class= banner p>
 <%= link_to new_task_path do %>
-  <i class="fa fa-plus"></i> Add a new task
+  <i class="fa fa-plus"></i> <h1> Add a new task </h1>
 <% end %>
